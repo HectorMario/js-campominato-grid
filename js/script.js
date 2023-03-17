@@ -3,12 +3,6 @@ const pre = document.getElementById("tru");
 const difi = document.getElementById("level")
 
 
-function grid(i){
-    const hect = document.createElement("div");
-    hect.classList.add("ms-container");
-    hect.innerHTML = `<span>${i}</span>`;
-    return hect
-}
 
 function incre(){
     let i = 1 ;
@@ -32,5 +26,12 @@ function incre(){
         i++
     }
     
+}
+function grid(i){
+    const hect = document.createElement("div");
+    hect.classList.add("ms-container");
+    hect.innerHTML = `<span>${i}</span>`;
+    console.log(this);
+    return hect
 }
 rator.addEventListener("click", incre)

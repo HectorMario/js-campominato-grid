@@ -6,7 +6,7 @@ div.container-fluid.ms-color{
 }
 
 div.container.ms-color{
-    background-color: blue;
+    background-color: rgb(155, 155, 196);
     height: 80vh;
 }
 
@@ -16,9 +16,27 @@ div.container-fluid.ms-heigth{
 }
 
 div.ms-container{
-    width: calc(100% / 10);
     display: flex;
     justify-content: center;
     align-items: center;
     border: 1px black solid;
+}
+
+div.ten{
+    width: calc(100% / 10);
+}
+
+div.nine{
+    width: calc(100% / 9);
+}
+div.seven{
+    width: calc(100% / 10);
+}
+
+.blue{
+    background-color: blue;
+}
+
+.red{
+    background-color: red;
 }

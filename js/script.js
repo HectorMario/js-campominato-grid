@@ -1,7 +1,6 @@
 const rator = document.getElementById("genere");
 const pre = document.getElementById("tru");
-const difi = document.getElementById("level")
-
+const difi = document.getElementById("level");
 
 
 function incre(){
@@ -32,6 +31,7 @@ function incre(){
     
 }
 function grid(i){
+    let bomb = Math.ceil(Math.random()*3)
     const hect = document.createElement("div");
     hect.classList.add("ms-container");
     hect.innerHTML = `<span>${i}</span>`;
@@ -39,11 +39,20 @@ function grid(i){
         const bra = parseInt(this.querySelector("span").textContent);
         if( bra % 2 === 0){
             this.classList.add("blue")
-            alert(bra)
+            console.log(bra);
+            if (bomb == 1){
+                alert("bomb puttana")
+                location.reload()
+            }
         } else {
             this.classList.add("red")
-            alert(bra)
+            console.log(bra);
+            if (bomb == 1){
+                alert("bomb puttana")
+                location.reload()
+            }
         }
+        console.log(this);
     });
     return hect
 }
